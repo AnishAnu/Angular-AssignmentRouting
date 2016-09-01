@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>State Bank Of India</title>
+    <meta name="description" content="">
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Bootstrap CSS -->
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+    <link href="Includes/css/stylesheet.css" rel="stylesheet">
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="Js/jquery-3.1.0.js"></script>
+</head>
+<!-- end of head -->
+
+<body ng-app="myApp" ng-controller="controller1">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <!-- navbar -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a><img src="Images/logo1.jpg"></a>
+            </div>
+            <!-- end navbar-header -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#tableview">Home<span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SBI services<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Personal Loan</a></li>
+                            <li><a href="#">Account Issue</a></li>
+                            <li><a href="#">NRI Services</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Complaints</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Branch</a></li>
+                        </ul>
+                    </li>
+                    <li class="activeaa"><a href="#LoanPage">Loan<span class="sr-only"></span></a></li>
+                    <li class="activeaa"><a href="#">SBI Plans<span class="caret"></span></a></li>
+                    <li class="activeaa"><a href="#">Apply-PAN Card<span class="caret"></span></a></li>
+                    <li class="activeaa"><a href="#">Help<span class="caret"></span></a></li>
+                    <li class="activeaa"><a href="#">Offers<span class="caret"></span></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-user"></span>My Profile</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-camera"></span>Photo</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-wrench"></span>Setting</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-"></span>Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- end of collapse navbar-collapse -->
+        </div>
+        <!-- end container -->
+    </nav>
+    <!-- end nav -->
+    <!-- main container -->
+    <div class="container mainbody" id="main">
+        <div class="row" id="bigCallout">
+            <div class="container callout">
+                <div class="page-header">
+                    <marquee style="font-family:Book Antiqua; font-size: 28px; color: white" bgcolor="#000080" scrolldelay="90" scrollamount="5" height="30px">Welcome to State Bank Of India.... Fastest Banking, Safe-Locker, Internet Banking, 100% Trust, </marquee>
+                </div>
+                <!-- end page-header -->
+                <cus-dir></cus-dir>
+            </div>
+        </div>
+        <div ng-view></div>
+        <!-- next prev button -->
+        <div class="container">
+            <button type="button" id="prev" class="btn btn-default pull-left"><span class="glyphicon glyphicon-fast-backward"></span></button>
+            <button type="button" id="next" class="btn btn-default pull-right"><span class="glyphicon glyphicon-fast-forward"></span></button>
+        </div>
+    </div>
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+    <!-- First try for the online version of jQuery-->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- If no online access, fallback to our hardcoded version of jQuery -->
+    <script>
+    window.jQuery || document.write('<script src="Js/jquery-3.1.0.js"><\/script>')
+    </script>
+    <!-- Custom JS -->
+    <script src="Includes/js/mainScript.js"></script>
+    <script src="Includes/js/newscript.js"></script>
+    <script src="Includes/js/servicepage.js"></script>
+    <script src="Includes/js/valuePassService.js"></script>
+    <script src="Includes/js/firstDirective.js"></script>
+    <script type="text/javascript" src="Bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

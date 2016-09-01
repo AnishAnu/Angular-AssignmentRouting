@@ -1,0 +1,31 @@
+<div class="container2">
+    <table class="table-responsive table table-border">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Account Number</th>
+                <th>Account Type</th>
+                <th>Age</th>
+                <th>Address</th>
+                <th>Contact</th>
+                <th>More</th>
+            </tr>
+        </thead>
+        <tbody id="xyz">
+            <tr id="trow" ng-repeat="x in view1">
+                <td>{{x.id}}</td>
+                <td>{{x.firstname}}</td>
+                <td>{{x.accountnumber}}</td>
+                <td>{{x.accounttype}}</td>
+                <td>{{x.age}}</td>
+                <td>{{x.address}}</td>
+                <td>{{x.phone}}</td>
+                <td><a href="#/editCus" role="button" type="button" ng-click="editRow(x.id)" id="editbtn" ng-hide="editHide()" data-id="{{id}}" class="btn btn-success noeditt btnedit">Edit</a></td>
+                <td>
+                    <button type="button" ng-click="removeRow(x.id)" id="deletebtn" data-id="{{id}}" class="btn btn-danger edit btndelete"><span class="glyphicon glyphicon-trash"></span></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
